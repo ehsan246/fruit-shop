@@ -4,10 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Shop</title>
+<!-- Google FOnt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet"> 
+
+
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+
+
+    <!-- Tailwind & Daisy UI -->
+	<link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+	<script src="https://cdn.tailwindcss.com"></script>
+
+
+	<!-- TailWind CUSTOM Color -->
+	<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '',
+          }
+        }
+      }
+    }
+	</script>
+
     <!-- My Stylesheet -->
     <link rel="stylesheet" href="style/css.css">
+
+
 </head>
 <body>
+    <header>
+        <nav class="lg:px-9 px-5">
+          <div class="navbar lg:bg-error rounded-full w-full ">
+
+
+            <div class="navbar-start hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-zinc-50 font-medium text-lg">
+                <li><a>Home</a></li>
+                
+                <li><a>About Us</a></li>        
+                <li><a>Shop</a></li>        
+                <li><a>All Fruits</a></li>        
+              </ul>
+            </div>
+
+            <div class="navbar-center">
+              <div class="flex justify-center items-center">
+                <img class="w-7 h-8" src="images/logo.png" alt="">
+                <a class=" px-1 btn btn-ghost normal-case text-4xl text-black font-bold	 lg:text-zinc-50">Fruit Burst</a>
+              </div>
+            </div>
+
+
+
+
+
+            <div class="navbar-end">
+              <div class="invisible lg:visible flex justify-end items-center relative ">
+                <input
+                   placeholder=""
+                   class="border border-gray-400 rounded-full p-4 w-full"
+                />
+                <i class="fa-solid fa-magnifying-glass absolute mr-2 w-10"></i>
+             </div>
+              
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden text-black	">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Item 1</a></li>
+                  <li>
+                    <a>Parent</a>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+            </div>
+
+
+          </div>
+  
+
+        </nav>
+        
+
+        
+        <div class="banner">
+
+        </div>
+
+    </header>
+    <main>
+        <section>
+            <div class="deal-of-the-day">
+                
+            </div>
+        </section>
+        <section>
+            <div class="meet-the-team">
+
+            </div>
+        </section>
+        <section>
+            <div class="why-choose-us">
+
+            </div>
+        </section>
+
+    </main>
+    <footer></footer>
+
+
     
+
+
+
+
 </body>
 </html>
