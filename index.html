@@ -43,7 +43,7 @@
 </head>
 <body>
     <header>
-        <nav class="lg:px-20 ">
+        <nav class="lg:px-20 lg:my-12 ">
           <div class="navbar lg:bg-red-400 px-5 lg:rounded-full w-full ">
             <div class="navbar-start hidden lg:flex">
               <ul class="menu menu-horizontal px-1 text-zinc-50 font-medium text-lg">
@@ -105,48 +105,50 @@
             <div>
               <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
+                  
                   <img src="images/banner1.png" class="w-full" />
+                  
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle">❮</a> 
-                    <a href="#slide2" class="btn btn-circle">❯</a>
+                    <a href="#slide4" class="btn btn-circle btn-neutral">❮</a> 
+                    <a href="#slide2" class="btn btn-circle btn-neutral">❯</a>
                   </div>
                 </div> 
                 <div id="slide2" class="carousel-item relative w-full">
                   <img src="images/banner2.png" class="w-full" />
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a> 
-                    <a href="#slide3" class="btn btn-circle">❯</a>
+                    <a href="#slide1" class="btn btn-circle btn-neutral">❮</a> 
+                    <a href="#slide3" class="btn btn-circle btn-neutral">❯</a>
                   </div>
                 </div> 
                 <div id="slide3" class="carousel-item relative w-full">
                   <img src="images/banner3.png" class="w-full" />
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a> 
-                    <a href="#slide4" class="btn btn-circle">❯</a>
+                    <a href="#slide2" class="btn btn-circle btn-neutral">❮</a> 
+                    <a href="#slide4" class="btn btn-circle btn-neutral">❯</a>
                   </div>
                 </div> 
                 <div id="slide4" class="carousel-item relative w-full">
                   <img src="images/banner4.png" class="w-full" />
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle">❮</a> 
-                    <a href="#slide1" class="btn btn-circle">❯</a>
+                    <a href="#slide3" class="btn btn-circle btn-neutral">❮</a> 
+                    <a href="#slide1" class="btn btn-circle btn-neutral">❯</a>
                   </div>
                 </div>
               </div>
               <div class="">
-                <div class="relative">
-                  <div class="absolute w-full text-center -mt-40 lg:-mt-80 px-12 lg:px-40 flex flex-col justify-center items-center">
+                <div class="relative w-full">
+                  <div class="absolute  text-center -mt-40 lg:-mt-80 mx-16 lg:px-40 flex flex-col justify-center items-center">
                     <h1 class="font-extrabold text-2xl lg:text-7xl text-white">
                       Exotic tastes at your doorstep
                     </h1>
                     <p class="font-normal text-white text-sm lg:text-xl">We supply highly quality organic products</p>
-                    <button class="btn btn-error">Shop Now</button>
+                    <button class="btn btn-error text-white ">Shop Now</button>
                   </div>
                 </div>
               </div>
             </div>
             <div class="w-full relative">
-              <div class=" mx-auto rounded-xl bg-white p-9 -mt-20 flex justify-between w-3/4 invisible lg:visible text-center">
+              <div class=" mx-auto rounded-xl shadow-md bg-white p-9 -mt-20 flex justify-between w-3/4 invisible lg:visible text-center">
                 <div>
                   <img src="images/fruit1.png" alt="">
                   <p class="font-bold">Strawberry</p>
@@ -182,16 +184,44 @@
             <div class="deal-of-the-day  lg:px-20">
               <div class="flex lg:justify-between lg:items-center lg:flex-row flex-col  ">
                 <div class="deal-title lg:w-6/12 w-full lg:text-left text-center">
-                  <h1 class="font-extrabold lg:text-5xl text-lg text-black lg:px-10">Heal of the day</h1>
+                  <h1 class="font-extrabold lg:text-5xl text-lg text-black lg:px-10">Deal of the day</h1>
                   <p class=" px-10 font-medium lg:text-2xl text-sm text-black opacity-60 mt-3">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                 </div>
-                <div class="counter lg:w-6/12 lg:text-right text-center">
-                  <span class="countdown font-extrabold font-mono lg:text-5xl text-3xl mt-4">
-                    <span style="--value:15;"></span>:
+                <!-- <div class="counter lg:w-6/12 lg:text-right text-center">
+                  <span class="countdown font-extrabold font-mono lg:text-5xl text-3xl mt-4 flex justify-around lg:justify-end mx-6">
+                    <span style="--value:15;">Day</span>:
                     <span style="--value:10;"></span>:
                     <span style="--value:24;"></span>:
                     <span style="--value:47;"></span>
                   </span>
+                </div> -->
+                <div class="clock-clock w-full flex justify-around lg:justify-end">
+                  <div class="grid grid-flow-col gap-5 text-center auto-cols-max font-extrabold">
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:15;"></span>
+                      </span>
+                      days
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:10;"></span>
+                      </span>
+                      hours
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:24;"></span>
+                      </span>
+                      min
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:51;"></span>
+                      </span>
+                      sec
+                    </div>
+                  </div>
                 </div>
 
               </div>
@@ -614,16 +644,18 @@
                   </div>
                   
                 </div>
+              
                 <div class="content-card lg:flex lg:flex-row-reverse">
                   <div class="flex justify-center">
                     <div class="choose-us-profile-icon h-14 w-14 bg-gray-300 rounded-full flex justify-center items-center mt-6">
                       <i class="fa-regular fa-thumbs-up" style="color: #000000;"></i>
+                    
                     </div>
                   </div>
                   
                   <div class="choose-us-text flex flex-col items-center lg:items-end px-6">
                     <h1 class="font-extrabold text-2xl text-black my-3">The Benefits Only</h1>
-                    <svg class="mx-auto" height="5" width="100" >
+                    <svg  height="5" width="100" >
                       <line x1="0" x2="100"  style="stroke:rgb(0,0,0);stroke-width:5" />
                     </svg>
                     
